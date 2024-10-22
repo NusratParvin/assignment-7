@@ -4,7 +4,7 @@
 
 PostgreSQL is an open-source relational database management system (RDBMS) that is widely used and well known for its feature-richness, flexibility, performance, and scalability. It is designed to handle large-scale data workloads and is highly compliant with SQL standards.
 
-### Key Features of PostgreSQL:
+**Key Features of PostgreSQL**:
 
 1. **ACID Compliance**: Ensures reliable and consistent transactions with Atomicity, Consistency, Isolation, and Durability.
 
@@ -22,7 +22,7 @@ PostgreSQL is an open-source relational database management system (RDBMS) that 
 
 A **database schema** in PostgreSQL serves as a logical framework for organizing and managing data. It defines the structure of tables, views, indexes, and more within the database, acting as a namespace.
 
-### Key Purposes:
+**Key Purposes**:
 
 1. **Organization**: Groups related objects (e.g., tables, views) under a common name for better management.
 2. **Namespace Management**: Allows multiple objects with the same name in different schemas, preventing conflicts.
@@ -50,7 +50,7 @@ In this example, the sales schema logically groups all sales-related database ob
 
 ## 3. Explain the primary key and foreign key concepts in PostgreSQL?
 
-# Primary Key:
+### Primary Key:
 
 A _Primary Key_ is a column (or set of columns) that uniquely identifies each row in a table. It ensures that no duplicate or `NULL` values exist in the column(s) marked as the primary key.
 
@@ -64,7 +64,7 @@ CREATE TABLE students (
 );
 ```
 
-# Foreign Key:
+### Foreign Key:
 
 A _Foreign Key_ is a column (or set of columns) that creates a relationship between two tables. It refers to the _Primary Key_ of another table, ensuring referential integrity by enforcing that the value in the foreign key column must exist in the referenced primary key column.
 
@@ -80,7 +80,7 @@ CREATE TABLE enrollments (
 
 ## 4. What is the difference between the VARCHAR and CHAR data types?
 
-# `VARCHAR` stands for _variable-length character_ and can store strings of varying lengths up to a specified maximum.
+- `VARCHAR` stands for _variable-length character_ and can store strings of varying lengths up to a specified maximum.
 
 _Example_:
 
@@ -90,7 +90,7 @@ CREATE TABLE users (
 );
 ```
 
-# `CHAR` stands for _fixed-length character_ and stores strings with a fixed length.
+- `CHAR` stands for _fixed-length character_ and stores strings with a fixed length.
 
 _Example_:
 
@@ -110,7 +110,7 @@ CREATE TABLE products (
 
 The **WHERE** clause in a `SELECT` statement is used to filter records from a database table based on specific conditions.
 
-# Key Purposes:
+**Key Purposes**:
 
 1. _Filter Data_: Limits the result set by returning only rows that satisfy the condition.
 2. _Conditional Queries_: Enables retrieving data based on specific conditions like equality, ranges, patterns, or null checks.
@@ -173,7 +173,7 @@ The **JOIN** operation in PostgreSQL is used to combine rows from two or more ta
 3. _RIGHT JOIN_: Returns all rows from the right table and matching rows from the left table.
 4. _FULL OUTER JOIN_: Returns all rows when there is a match in either table.
 
-# Examples:
+### Examples:
 
 ```sql
 
@@ -209,7 +209,7 @@ The **GROUP BY** clause is used to group rows that have the same values in speci
 - _GROUP BY_ divides the result set into groups based on one or more columns.
 - Aggregate functions are then applied to each group to summarize data.
 
-# Example:
+### Example:
 
 ```sql
 SELECT course_id, COUNT(student_id) AS student_count
